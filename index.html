@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+    <hr>
+    <div class="container">
+        <div class="square-container">
+            <div class="d-flex" style="justify-content: space-between;">
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="d-flex" style="justify-content: space-between;">
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="rectangle"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="parent">
+                <h2>Parent Element</h2>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+                <h2>Next Sibling</h2>
+                <p>Some text here.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <pre>
+                *  
+
+              *   * 
+                  
+    *   *   *       *   *   *
+      *                   *
+        *               *
+      *                   *
+    *   *   *        *  *   *
+
+              *    *
+            
+                *
+          </pre>
+    </div>
+
+
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="assets/images/entrance-lobby-min.webp" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="assets/images/gazebo.webp" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="assets/images/14 tf height commercial unit-min.webp" alt="Image 3">
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="container box-container">
+        <div class="box-container box-border A">A</div>
+        <div class="box-container box-border B">B</div>
+        <div class="box-container box-border C">C</div>
+    </div>
+    <div class="container box-container">
+        <div class="box-container box-border A1">A</div>
+        <div class="box-container box-border B1">B</div>
+        <div class="box-container box-border C1">C</div>
+    </div>
+    <div class="container box-container">
+        <div class="box-container box-border A2">A</div>
+        <div class="box-container box-border B2">B</div>
+        <div class="box-container box-border C2">C</div>
+    </div>
+    <!-- Add the required dependencies (jQuery and Popper.js) from CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+
+    <!-- Add the Bootstrap JavaScript from CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
